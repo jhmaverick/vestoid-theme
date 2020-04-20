@@ -1,0 +1,333 @@
+/***************************************
+ * General
+ ***************************************/
+body {
+    background: #F5F5F5;
+}
+
+.l-center {
+    width: 100%;
+    max-width: 100%;
+}
+
+/***************************************
+ * Header menu
+ ***************************************/
+.l-header {
+    width: 100%;
+    left: 0;
+    z-index: 150;
+    margin-bottom: 0;
+    height: 46px;
+    background: #262F37;
+}
+
+.l-header .l-center {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.l-header .l-logo {
+    background: url("img/vestacp.svg") no-repeat center #1e262c;
+    background-size: 130px auto;
+    width: 240px;
+    height: 46px;
+    content: " ";
+    display: block;
+    float: left;
+    margin: 0;
+}
+
+.l-header .l-logo:hover {
+    background-color: #1b2227;
+}
+
+.l-header .l-menu {
+    margin-left: 0 !important;
+    padding: 6px 0 0 40px;
+    left: 240px;
+}
+
+.l-header .l-profile {
+    padding: 6px 40px 0 0;
+}
+
+/***************************************
+ * Main Menu
+ ***************************************/
+.l-stat {
+    left: 0;
+    position: fixed;
+    top: 46px;
+    width: 240px;
+    height: calc(100% - 46px);
+    background: #42515f;
+    padding-top: 30px !important;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    z-index: 130;
+    box-sizing: border-box;
+}
+
+.l-stat * {
+    box-sizing: border-box;
+}
+
+.l-stat .l-stat__col {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.l-stat .l-stat__col a {
+    height: auto !important;
+    min-height: auto !important;
+    padding-bottom: 0;
+    width: 100%;
+    padding-left: 0;
+    background: transparent !important;
+    border-bottom: 3px solid transparent !important;
+}
+
+.l-stat .l-stat__col a ul {
+    height: 0;
+    min-height: 0;
+    visibility: hidden !important;
+    margin: 0;
+}
+
+.l-stat .l-stat__col.l-stat__col--active a ul {
+    height: auto;
+    min-height: auto;
+    visibility: visible !important;
+    margin: 12px 0;
+}
+
+.l-stat .l-stat__col-title {
+    width: 100%;
+    border-left: 2px solid transparent;
+    padding: 14px 18px 12px;
+    color: #FFF;
+}
+
+.l-stat .l-stat__col ul li {
+    color: #FFF !important;
+}
+
+.l-stat .l-stat__col:not(.l-stat__col--active) ul li:first-child span {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    min-width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    visibility: visible !important;
+    text-align: center;
+    padding: 4px 4px;
+}
+
+.l-stat .l-stat__col--active .l-stat__col-title {
+    color: #FFF;
+    font-size: 14px;
+    margin-top: 0;
+    letter-spacing: 0;
+    margin-right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-left-color: #ff6701;
+}
+
+.l-stat .l-stat__col:hover .l-stat__col-title {
+    color: #ff6701;
+}
+
+.l-stat .l-stat__col.l-stat__col--active ul {
+    display: block;
+    padding-left: 22px;
+}
+
+
+/***************************************
+ * Pages Menu
+ ***************************************/
+.l-sort {
+    width: 100%;
+    left: 0;
+    height: 42px;
+    background: #FFF;
+    position: absolute;
+    top: 46px;
+    margin-top: 0 !important;
+    box-sizing: border-box;
+}
+
+.l-sort .l-sort__create-btn {
+    left: 50px;
+}
+
+.l-sort .l-sort-toolbar {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/***************************************
+ * Content
+ ***************************************/
+div.l-content > div.l-separator:nth-of-type(2),
+div.l-content > div.l-separator:nth-of-type(4) {
+    display: none !important;
+}
+
+.l-content {
+    position: relative;
+    width: calc(100% - 240px);
+    left: 240px;
+    min-height: calc(100vh - 156px);
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
+/* Style for pages except forms */
+.l-center.units {
+    background: #FFF;
+    border-top: 2px solid #ff6701;
+    max-width: calc(100% - 80px) !important;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 200px;
+}
+
+.l-center.units .l-unit {
+    border-bottom: 1px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.l-center.units::before {
+    height: 0 !important;
+}
+
+/* Forms */
+#vstobjects {
+    padding-top: 0 !important;
+    padding-bottom: 10px;
+    background: #FFF;
+    border-top: 2px solid #ff6701;
+    max-width: calc(100% - 80px) !important;
+    margin: 40px auto 40px;
+}
+
+#vstobjects .l-unit-ft .data {
+    margin-bottom: 20px;
+}
+
+/* Menus de ajuda do rodapé */
+.to-shortcuts, .to-top {
+    z-index: 200;
+}
+
+.shortcuts {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/***************************************
+ * Login and password reset
+ ***************************************/
+body.body-reset,
+body.body-login {
+    background: #262F37;
+}
+
+body.body-reset .login,
+body.body-login .login {
+    background-color: transparent;
+    box-shadow: none;
+    width: 320px !important;
+    table-layout: fixed;
+}
+
+table.login > tbody::before {
+    background: url("img/vestacp.svg") no-repeat center #262F37;
+    background-size: 260px auto;
+    width: 100%;
+    height: 80px;
+    content: " ";
+    display: block;
+    margin: 0 auto 30px;
+}
+
+table.login > tbody > tr > td > table {
+    background: #FFF;
+    border-radius: 5px;
+    width: 320px !important;
+    table-layout: fixed;
+}
+
+table.login > tbody > tr > td > table > tbody > tr:first-child > td:first-child {
+    display: none;
+}
+
+table.login > tbody > tr > td > table > tbody > tr:first-child > td:nth-child(2) form {
+    padding: 0 30px 20px;
+}
+
+table.login > tbody > tr > td > table > tbody > tr:first-child > td:nth-child(2) .vst-advanced {
+    float: right;
+    padding: 5px 5px 0;
+}
+
+table.login > tbody > tr > td > table > tbody > tr:first-child > td:nth-child(2) form [type=submit] {
+    width: 100%;
+    background: #FF5F00 !important;
+    color: #FFF !important;
+    border: none !important;
+    text-transform: uppercase;
+    padding: 13px 0;
+    height: 40px;
+}
+
+table.login > tbody > tr > td > table > tbody > tr:first-child > td:nth-child(2) form [type=submit]:active,
+table.login > tbody > tr > td > table > tbody > tr:first-child > td:nth-child(2) form [type=submit]:hover {
+    background: #e85600 !important;
+    color: #FFF !important;
+}
+
+table.login > tbody > tr > td > table > tbody > tr:first-child > td:nth-child(2) form [type=button] {
+    width: 100%;
+    border: none !important;
+    text-transform: uppercase;
+    padding: 13px 0;
+    height: 40px;
+    margin-top: 10px;
+}
+
+table.login > tbody > tr > td > table > tbody .login-bottom {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+table.login > tbody > tr > td > table > tbody .login-bottom div:first-child {
+    height: auto !important;
+}
+
+table.login > tbody > tr > td > table > tbody .login-bottom a.error {
+    color: red;
+    padding: 0 5px 20px;
+    display: block;
+}
+
+table.login > tbody > tr > td > table > tbody .vestacp {
+    padding-bottom: 10px;
+    display: block;
+}
