@@ -1,0 +1,12 @@
+{
+  "name": "vestacp-renew-theme",
+  "description": "VestaCP Theme.",
+  "version": "0.0.1",
+  "user-role": "all",
+  "homepage": "https://github.com/jhmaverick/vestacp-renew-theme#readme",
+  "author": {
+    "name": "João Henrique",
+    "email": "joao_henriquee@outlook.com",
+    "homepage": "https://github.com/jhmaverick/"
+  }
+}
