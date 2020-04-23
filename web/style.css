@@ -20,12 +20,17 @@ body {
     margin-bottom: 0;
     height: 46px;
     background: #262F37;
+    overflow: visible;
+}
+
+.l-header * {
+    box-sizing: border-box;
 }
 
 .l-header .l-center {
     width: 100%;
     max-width: 100%;
-    box-sizing: border-box;
+    display: flex;
 }
 
 .l-header .l-logo {
@@ -35,7 +40,7 @@ body {
     height: 46px;
     content: " ";
     display: block;
-    float: left;
+    /*float: left;*/
     margin: 0;
 }
 
@@ -45,8 +50,29 @@ body {
 
 .l-header .l-menu {
     margin-left: 0 !important;
-    padding: 6px 0 0 40px;
+    padding: 6px 0 6px 40px;
     left: 240px;
+    position: initial;
+    flex: 1;
+    background: #262F37;
+    overflow: hidden;
+    height: 46px;
+}
+
+.l-header .l-menu:hover {
+    overflow: visible;
+    height: auto;
+}
+
+.l-menu__item.l-menu__item--active a {
+    background: transparent;
+    color: #ff6701;
+    /*color: #f79b44;*/
+}
+
+.l-menu__item a:hover {
+    background: #ff6701;
+    color: #FFF;
 }
 
 .l-header .l-profile {
@@ -69,6 +95,11 @@ body {
     margin-top: 0;
     z-index: 130;
     box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.l-stat:hover {
+    overflow-y: auto;
 }
 
 .l-stat * {
@@ -81,6 +112,15 @@ body {
     position: relative;
 }
 
+/* Show custom menus */
+.l-stat .l-stat__col {
+    display: none;
+}
+
+.l-stat .l-stat__col.l-stat__col--show {
+    display: block;
+}
+
 .l-stat .l-stat__col a {
     height: auto !important;
     min-height: auto !important;
@@ -91,14 +131,14 @@ body {
     border-bottom: 3px solid transparent !important;
 }
 
-.l-stat .l-stat__col a ul {
+.l-stat .l-stat__col ul {
     height: 0;
     min-height: 0;
     visibility: hidden !important;
     margin: 0;
 }
 
-.l-stat .l-stat__col.l-stat__col--active a ul {
+.l-stat .l-stat__col.l-stat__col--active ul {
     height: auto;
     min-height: auto;
     visibility: visible !important;
@@ -112,8 +152,17 @@ body {
     color: #FFF;
 }
 
-.l-stat .l-stat__col ul li {
-    color: #FFF !important;
+.l-stat .l-stat__col ul li,
+.l-stat .l-stat__col ul li a {
+    color: #FFF;
+}
+
+.l-stat .l-stat__col ul li a {
+    display: inline;
+}
+
+.l-stat .l-stat__col ul li a:hover {
+    color: #ff6701;
 }
 
 .l-stat .l-stat__col:not(.l-stat__col--active) ul li:first-child span {
@@ -139,7 +188,7 @@ body {
     border-left-color: #ff6701;
 }
 
-.l-stat .l-stat__col:hover .l-stat__col-title {
+.l-stat .l-stat__col a:hover .l-stat__col-title {
     color: #ff6701;
 }
 
@@ -224,6 +273,11 @@ div.l-content > div.l-separator:nth-of-type(4) {
 
 #vstobjects .l-unit-ft .data {
     margin-bottom: 20px;
+}
+
+.helper-container {
+    padding-right: 95px;
+    width: auto;
 }
 
 /* Menus de ajuda do rodapé */
