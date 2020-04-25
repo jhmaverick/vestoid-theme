@@ -1,3 +1,3 @@
 <?php
 
-Vesta::add_css('/plugins/vestacp-renew-theme/style.css', 8);
+Vesta::add_css('/plugin/vestoid-theme/style.css', 8);

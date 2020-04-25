@@ -1,9 +1,10 @@
 {
-  "name": "vestacp-renew-theme",
-  "description": "VestaCP Theme.",
-  "version": "0.0.1",
-  "user-role": "all",
-  "homepage": "https://github.com/jhmaverick/vestacp-renew-theme#readme",
+  "name": "vestoid-theme",
+  "description": "Updates the VestaCP theme to an enhanced version.",
+  "version": "0.1.0",
+  "min-vesta": "0.9.8",
+  "repository": "https://github.com/jhmaverick/vestoid-theme",
+  "homepage": "https://github.com/jhmaverick/vestoid-theme#readme",
   "author": {
     "name": "João Henrique",
     "email": "joao_henriquee@outlook.com",

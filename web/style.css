@@ -79,6 +79,10 @@ body {
     padding: 6px 40px 0 0;
 }
 
+.l-header .l-profile .l-profile__notifications {
+    box-sizing: initial;
+}
+
 /***************************************
  * Main Menu
  ***************************************/
