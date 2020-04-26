@@ -1,4 +1,4 @@
-## Vesta Renew Theme
+## VestaCP Theme
 
 ## Installation
 
